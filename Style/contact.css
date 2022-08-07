@@ -13,8 +13,11 @@
 .container-fluid{
    display: grid;
    grid-template-columns: 20% 80%;
-   background-image:url(../Imgs/Project\ 2.jpg);
+   background-image:url(../Imgs/Project\ 1.jpg);
 
+}
+.text p {
+   text-shadow: #FCE152;
 }
 
 .contact{
@@ -74,6 +77,9 @@
 
 
 }
+.m-upper-section a svg{
+   background-color:#1D1D1D ;
+ }
 .contactinfo .box .text{
    display: flex;
    margin-left: 20px;
@@ -81,12 +87,22 @@
    color: #fff;
    flex-direction: column;
    font-weight: 300;
+   b
 
 }
+
+
 .contactinfo .box .text h3{
    font-weight: 500;
    color:#FCE152;
 
+
+}
+.contactinfo .box .text p{
+   order: none;
+  
+   border-radius: 50px;
+   background-color: #494949;
 
 }
  .contactform{
@@ -129,6 +145,8 @@
     
 
 } 
+
+
 .contactform .inputBox input:focus ~ span,
 .contactform .inputBox input:valid ~ span,
 .contactform .inputBox textarea:focus ~ span,
@@ -147,6 +165,9 @@
    font-size: 18px;
 }
 
+
+
+
 @media(max-width:930px){
    .container{
       display: grid;
@@ -161,15 +182,12 @@
    }
    
 }
-@media(max-width:390px){
+@media screen and (max-width:390px){
    .container-fluid{
       display: grid;
       grid-template-rows: repeat(4, 1fr) ;
    }
-   .main-menu{
-      position: relative;
-      
-   }
+
 }
 
 
@@ -203,7 +221,7 @@
     display: grid;
     grid-template-rows: 20% 70%;
     width: 300px;
-    position: fixed;
+    position: absolute;
     height: 500px;
  }
  
@@ -218,6 +236,9 @@
     margin-left: 5px;
     transition: all .3 all;
  
+ }
+ .m-upper-section a svg{
+    background-color: #343434;
  }
  
  

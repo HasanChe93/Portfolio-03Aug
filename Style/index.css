@@ -2,7 +2,9 @@
    /* object-fit: cover; */
    box-sizing: border-box;
 }
-
+.m-upper-section a svg{
+  background-color:#1D1D1D ;
+}
 
 /* __________________________ Grid and Flex ________________________________ */
 
@@ -28,8 +30,12 @@
 .text-h2 img {
   height: 150px;
   width: 150px;
-  border-radius: 50px;
+  border-radius: 50%;
 }
+.ini-txt{
+   padding-top:60px; ;
+}
+
 
 .text-h2 {
    display: grid;
@@ -73,53 +79,19 @@ ul{
    display: flex;
    flex-direction:column ;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    *{
    box-sizing: border-box;
    background-color: #1D1D1D;
    color: gainsboro;
+   
 }
 
+.sk-2{
+   list-style-position: inside;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
 
 .main-menu {
    display: grid;
@@ -318,3 +290,40 @@ svg:only-of-type {
 .Leadership{width: 75%; background-color: #f44336;}
 .communication {width: 75%; background-color: #f44336;}
 .Analysis{width: 85%; background-color: #04AA6D;}
+
+
+
+@media(max-width:1250px){
+   .tai{
+      display:flex;
+      flex-direction: column;
+   }
+   .header{
+      position: relative;
+   }
+
+
+}
+@media(max-width:1250px){
+.text-h2{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+img{
+   width: 25px;
+   height: 25px;
+}
+.sk{
+   display: flex;
+   flex-direction: column;
+   margin-left: 0px;
+}
+.header{
+   position: absolute;
+}
+.exp{
+   display: flex;
+   flex-direction: column;
+}
+}
